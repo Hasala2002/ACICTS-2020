@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
 .row.profile{
 display: flex;
@@ -203,7 +205,7 @@ section {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 30px;
-  font-family: 'MuseoModerno', cursive;
+  font-family: 'Nunito', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -212,7 +214,7 @@ section {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px;
-    font-family: 'MuseoModerno', cursive;
+    /* font-family: 'Balsamiq Sans', cursive; */
     /* white-space: pre-wrap; */
     /* word-break: break-word; */
     /* overflow-wrap: break-word; */
@@ -359,6 +361,7 @@ section {
   height: 90px;
   line-height: 90px;
   width: 90px;  
+  background-color: rgba(0, 0, 0, 0) !important;
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
@@ -641,8 +644,30 @@ section {
 .img-responsive.ach{
   height: 300px !important;
   width: auto;
-  object-fit:cover;
-  object-position: 50% 24%; 
+  object-fit: cover;
+  object-position: 50% 24%;
+  /* text-align: center; */
+  left: 8%;
+  position: relative;
+}
+
+.img-responsive.ach.noleft{
+left: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .img-responsive.ach{
+    height: 300px !important;
+    width: auto;
+    object-fit: cover;
+    object-position: 50% 24%;
+    /* text-align: center; */
+    left: 3%;
+    position: relative;
+  }
+  .img-responsive.ach.noleft{
+    left: 0px;
+    }
 }
 
 .img-responsive.team{
