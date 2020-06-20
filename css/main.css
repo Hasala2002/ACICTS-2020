@@ -661,8 +661,7 @@ left: 0px;
     width: auto;
     object-fit: cover;
     object-position: 50% 24%;
-    /* text-align: center; */
-    left: 3%;
+    text-align: center;
     position: relative;
   }
   .img-responsive.ach.noleft{
